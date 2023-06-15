@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>資産価値計算</title>
+</head>
+<body>
+	<form th:action ="@{/answer}" method="post">
+		銘柄:
+		<input type="text" name= "stock_name"><br>
+		
+		購入時の単価:
+		<input type="text" name= "stock_price"><br>
+		
+		現在の単価:
+		<input type="text" name = "stock_price2"><br>
+		
+		合計購入額:
+		<input type="text" name = "stock_total"><br>
+		
+		<button>送信</button>				
+	</form>
+
+</body>
+</html>
